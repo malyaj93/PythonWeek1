@@ -9,10 +9,10 @@ class Time:
         total_minutes %= 60
         return Time(total_hours, total_minutes)
 
-    def displayTimeInHoursAndMinutes(self):
+    def displayTime(self):
         print(f"Time: {self.hours} hour(s) and {self.minutes} minute(s)")
 
-    def displayTimeInMinute(self):
+    def displayMinute(self):
         total_minutes = self.hours * 60 + self.minutes
         print(f"Total minutes: {total_minutes} minutes")
 
@@ -32,5 +32,5 @@ time2 = input_time()
 added_time = time1.addTime(time2)
 
 # Display results
-added_time.displayTimeInHoursAndMinutes()
-added_time.displayTimeInMinute()
+added_time.displayTime()
+added_time.displayMinute()
